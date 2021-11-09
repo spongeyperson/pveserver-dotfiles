@@ -1,4 +1,3 @@
 [submodule "root/tools/rom-parser"]
 	path = root/tools/rom-parser
 	url = https://github.com/awilliam/rom-parser
-	ignore = dirty
