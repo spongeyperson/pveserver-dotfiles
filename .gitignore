@@ -1,0 +1,18 @@
+# OS Files & Folders
+
+## MacOS
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+## Windows
+
+ehthumbs.db
+ehthumbs_vista.db
+Thumbs.db
+Thumbs.db:encryptable
+$RECYCLE.BIN/
+*.stackdump
