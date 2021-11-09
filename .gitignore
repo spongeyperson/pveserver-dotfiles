@@ -20,20 +20,5 @@ $RECYCLE.BIN/
 # Ignore Nested Git Bare Repo
 .cfg
 
-# Ignore Entire OS
-
+# Ignore mnt
 /mnt
-/run
-/proc
-/sbin
-/sys
-/usr
-/var
-/bin
-/boot
-/dev
-/etc
-/lib
-/lib32
-/lib64
-/libx32
