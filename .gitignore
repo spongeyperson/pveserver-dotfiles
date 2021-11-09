@@ -29,3 +29,11 @@ $RECYCLE.BIN/
 /sys
 /usr
 /var
+/bin
+/boot
+/dev
+/etc
+/lib
+/lib32
+/lib64
+/libx32
