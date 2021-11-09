@@ -1,3 +1,6 @@
 [submodule "root/tools/rom-parser"]
 	path = root/tools/rom-parser
 	url = https://github.com/awilliam/rom-parser
+[submodule "root/tools/pve-helpers"]
+	path = root/tools/pve-helpers
+	url = https://github.com/ayufan/pve-helpers
