@@ -16,3 +16,6 @@ Thumbs.db
 Thumbs.db:encryptable
 $RECYCLE.BIN/
 *.stackdump
+
+# Ignore Nested Git Bare Repo
+.cfg
