@@ -23,7 +23,7 @@ taskset --cpu-list --all-tasks --pid <cpus> $(< /run/qemu-server/<vmid>.pid)
 
 # Host Configuration:
 
-** WIP **
+- Work In Progress
 
 [^1]: Possible Solutions for Core Pinning Include:  
   • https://wiki.tozo.info/en/server/proxmox/cpu-pinning
