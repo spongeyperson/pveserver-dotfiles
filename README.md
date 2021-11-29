@@ -1,6 +1,6 @@
 # Spongey's Proxmox Host Config
 ###### A set of Work in Progress Proxmox Virtual Environment VFIO Passthrough Configs 
-- ###### Guest Config: [spongeyperson/archvm-config](https://github.com/spongeyperson/archvm-config)
+- ###### Guest Config: [spongeyperson/archvm-dotfiles](https://github.com/spongeyperson/archvm-dotfiles)
 
 ![I run Proxmox Btw](https://user-images.githubusercontent.com/28176188/140871643-2361b015-48c2-4aa0-b68c-f7c3e8e595d6.png)
 
