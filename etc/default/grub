@@ -6,8 +6,11 @@
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=5
 GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
-GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on iommu=pt nofb nomodeset video=efifb:off vga=normal pcie_acs_override=downstream,multifunction"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on iommu=pt initcall_blacklist=sysfb_init"
 GRUB_CMDLINE_LINUX=""
+
+#Old GRUB with ACS Override Hack
+#GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on iommu=pt nofb nomodeset video=efifb:off vga=normal pcie_acs_override=downstream,multifunction"
 
 # Uncomment to enable BadRAM filtering, modify to suit your needs
 # This works with Linux (no patch required) and with any kernel that obtains
