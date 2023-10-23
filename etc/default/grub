@@ -4,13 +4,13 @@
 #   info -f grub -n 'Simple configuration'
 
 GRUB_DEFAULT=0
-GRUB_TIMEOUT=5
-GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
-GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on iommu=pt initcall_blacklist=sysfb_init"
+GRUB_TIMEOUT=8
+GRUB_DISTRIBUTOR="Proxmox VE"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on iommu=pt vfio-pci.ids=10de:1b81,10de:10f0,1002:73ff,1002:ab28 modprobe.blacklist=nouveau,nvidia_fb,nvidia,amdgpu,radeon video=efifb:off,vesafb:off initcall_blacklist=sysfb_init pcie_acs_override=downstream,multifunction"  
 GRUB_CMDLINE_LINUX=""
 
-#Old GRUB with ACS Override Hack
-#GRUB_CMDLINE_LINUX_DEFAULT="quiet amd_iommu=on iommu=pt nofb nomodeset video=efifb:off vga=normal pcie_acs_override=downstream,multifunction"
+# Disable os-prober, it might add menu entries for each guest
+GRUB_DISABLE_OS_PROBER=true
 
 # Uncomment to enable BadRAM filtering, modify to suit your needs
 # This works with Linux (no patch required) and with any kernel that obtains
@@ -28,8 +28,8 @@ GRUB_CMDLINE_LINUX=""
 # Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
 #GRUB_DISABLE_LINUX_UUID=true
 
-# Uncomment to disable generation of recovery mode menu entries
-#GRUB_DISABLE_RECOVERY="true"
+# Disable generation of recovery mode menu entries
+GRUB_DISABLE_RECOVERY="true"
 
 # Uncomment to get a beep at grub start
 #GRUB_INIT_TUNE="480 440 1"
