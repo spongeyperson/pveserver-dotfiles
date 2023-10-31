@@ -6,6 +6,7 @@ alias fishconfig="vim /home/tyler/.config/fish/config.fish"
 
 # Dotfiles Git
 alias dotfiles="/usr/bin/git --git-dir=/.dotfiles/ --work-tree=/"
+alias config="dotfiles"
 
 # Docker
 alias docker-pps="docker ps | less -S"
