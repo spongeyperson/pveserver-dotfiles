@@ -18,7 +18,18 @@ $RECYCLE.BIN/
 *.stackdump
 
 # Ignore Nested Git Bare Repo
-.cfg
+.dotfiles/
+.cfg/
+/root/pveserver-dotfiles
+
+# Ignore Secrets
+secrets/
+.secrets/
 
 # Ignore mnt
 /mnt
+
+# Ignore Proxmox Secrets
+pve-ssl.key
+pve-ssl.pem
+*lrm_status

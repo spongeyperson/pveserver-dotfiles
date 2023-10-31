@@ -13,12 +13,21 @@ auto lo
 iface lo inet loopback
 
 iface enp6s0 inet manual
+#Bottom Ethernet
 
 iface enp4s0 inet manual
+	mtu 9000
+#Top Ethernet
 
 iface ens1f0 inet manual
 
 iface ens1f1 inet manual
+
+iface wlp5s0 inet manual
+
+iface ens9f0 inet manual
+
+iface ens9f1 inet manual
 
 auto vmbr0
 iface vmbr0 inet static
@@ -27,11 +36,6 @@ iface vmbr0 inet static
 	bridge-ports enp4s0
 	bridge-stp off
 	bridge-fd 0
+	mtu 9000
 #PVE Bridge
-
-iface wlp5s0 inet manual
-
-iface ens9f0 inet manual
-
-iface ens9f1 inet manual
 

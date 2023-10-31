@@ -1,5 +1,5 @@
 127.0.0.1 localhost.localdomain localhost
-192.168.0.99 spongey-server.local spongey-server
+192.168.0.99 spongey-server.local pve.spongey.lan spongey-server
 
 # The following lines are desirable for IPv6 capable hosts
 
